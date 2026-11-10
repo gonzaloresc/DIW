@@ -1,0 +1,49 @@
+article { color: #352a24; font-family: Georgia, serif; border: 2px solid #ede2d2; }
+/* Aquí el color que se aplica, se aplica por herencia a lo que tenga dentro pero no tiene
+mucha prioridad 6*/
+
+.producto p { color: green; }
+/* Dentro de la clase producto selecciona los p, y esta es la penultima mas especifica 5*/
+
+p.destacado { color: orange; }
+/* Los p que su atributo class tiene la clase destacado, esta es la siguiente mas especifica 4*/
+
+#oferta .producto__precio { color: navy; }
+/* Aqui se aplica al producto__precio que esté dentro de una oferta, despues el siguiente
+mas especifico es este 3*/
+
+.producto__nombre { color: purple; }
+/* Aquí cambia el color de la clase, este es el siguiente más especifico 2*/
+
+h3 { color: black !important; }
+/* Aquí el important hace que este color tenga más prioridad que todos los demas 1*/
+
+
+/*  Apartado 2 
+
+        El precio se ve de azul navy gracias a "#oferta .producto__precio", si la quito se ve
+        amarillo gracias a "p.destacado"
+
+
+    Apartado 3
+   
+        Se ve de color negro gracias al important, si lo quitas se ve morado gracias a
+        .producto__nombre
+
+    
+    Apartado 4
+        La letra es Georgia por que está en el article y los elementos de dentro lo heredan
+        El borde del párrafo es: "2px solid #ede2d2"
+
+    
+    Apartado 5
+        .producto-oferta{
+            color:red;
+            padding:10px;
+        }
+
+*/
+.producto-oferta{
+    color:red;
+    padding:10px;
+}

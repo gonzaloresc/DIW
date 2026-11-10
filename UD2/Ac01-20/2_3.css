@@ -1,0 +1,128 @@
+/*
+EN ESTA PRACTICA ESTOY COMENTANDO LAS RESPUESTAS PERO EL CODIGO CSS NO LO COMENTO,
+YA QUE SOLO SE VA A APLICAR EL ÚLTIMO, PONGO UN CSS NUEVO PARA CADA APARTADO QUE LO NECESITA
+
+Apartado 1:
+    Descarta color y font size, no no se aplica el tamaño, el color es por que está mal
+    escrito y el tamaño es por que falta un punto y coma
+
+Apartado 2:
+    <style>
+        .TarjetaProducto{background-color:#fff;border-width:1px;border-style:solid;border-color:#ede2d2;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px}
+        .precioProducto { color: #352a24; font-weight: 700 }
+        .precioProducto { margin: 0 0 1 rem; color: #69584c; font-size: 1.25rem; }
+    </style>
+
+Apartado 3:
+*/
+
+    .TarjetaProducto{
+        background-color:#fff;
+        border-width:1px;
+        border-style:solid;
+        border-color:#ede2d2;
+        padding-top:16px;
+        padding-right:24px;
+        padding-bottom:16px;
+        padding-left:24px
+    }
+
+    .precioProducto {
+        color: #352a24;
+        font-weight: 700 
+    }
+
+    .precioProducto { 
+        margin: 0 0 1 rem;
+        color: #69584c;
+        font-size: 1.25rem;
+    }
+
+/*
+    Separando los estilos en una hoja a parte conseguimos mas claridad y podemos editar
+    solo los estilos sin afectar al código
+
+
+Apartado 4:
+*/
+    .TarjetaProducto{
+        background-color:#fff;
+        border-width:1px;
+        border-style:solid;
+        border-color:#ede2d2;
+        padding: 16px, 24px, 16px, 24px;
+    }
+
+    .precioProducto {
+        color: #352a24;
+        font-weight: 700
+    }
+
+    .precioProducto { 
+        margin: 0 0 1 rem;
+        color: #69584c;
+        font-size: 1.25rem;
+    }
+
+/*
+Apartado 5:
+*/
+    .tarjeta-producto{
+        background-color:#fff;
+        border-width:1px;
+        border-style:solid;
+        border-color:#ede2d2;
+        padding: 16px, 24px, 16px, 24px;
+    }
+
+    /*
+    He quitado el ".precio__pruducto" que había doble ya que solo se hace caso al último
+    
+    Tambien he agregado ".nombre__producto" para quitar ese estilo del html y dejarlo por aquí
+    */
+
+    .nombre__producto {
+        color: #87452e;
+    }
+
+    .precio__producto { 
+        margin: 0 0 1 rem;
+        color: #69584c;
+        font-size: 1.25rem;
+        font-weight: 700
+    }
+
+/*
+Apartado 6:
+*/
+
+    .tarjeta-producto{
+        background-color:#fff;
+        border-width:1px;
+        border-style:solid;
+        border-color:#ede2d2;
+        padding: 16px, 24px, 16px, 24px;
+    }
+    /* En este apartado lo mas importante es que el padding lo he simplificado en una sola linea */
+    
+
+    .nombre__producto {
+        color: #87452e;
+    }
+    /* Aquí he creado esta clase para poder editar el color sin que esté el style en el html */
+
+    .precio__producto { 
+        margin: 0 0 1 rem;
+        color: #69584c;
+        font-size: 1.25rem;
+        font-weight: 700
+    }
+    /* Aquí he juntado los dos bloques que editaban a ".precio__producto" en uno */
+
+/*
+Apartado 7:
+
+    Se vería el del título ya que lo edita en el html que tiene más prioridad
+
+*/
+

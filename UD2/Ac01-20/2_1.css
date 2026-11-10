@@ -1,0 +1,27 @@
+/* Apartado 1 Cascada */
+
+p {color: aqua;}    /* Aquí cambio el color de los párrafos a azul */
+p {color: red;}     /* Y aquí cambio el color a rojo */
+/* Al final el color que se mantiene es el rojo por que está el último */
+
+
+/* Apartado 2 Herencia */
+
+.noticia {
+  color: navy;              /* Aquí se cambiaría el color de los elementos que están dentro por que se heredan las propiedades, pero como más arriba cambio el color a los "p" no le afecta*/
+  font-family: sans-serif;
+  border: 1px solid navy;   /* Los bordes no le afectan a los "p" por que ese elemento no tiene */
+}
+
+
+/* Apartado 3 Especifidad */
+
+#aviso { color: navy; }     /* Los id son los que más prioridad tienen y se usa ese color */
+.destacado { color: teal; } /* Las clases tienen más prioridad pero menos que los id */
+p { color: maroon; }        /* Cuando cambias un tipo de elemento tiene menos peso que las clases y los id */
+/* Aquí se muestra el color navy */
+
+
+/* Apartado 4 Importancia */
+p { color: red !important; } /* Al poner !important esa propiedad es la que más importancia tiene */
+/* El p se ve rojo */
