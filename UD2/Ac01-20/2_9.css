@@ -1,0 +1,74 @@
+/* Aquí pongo los encabezados que están dentro del div 1 */
+
+.primero h1{
+    font-size: 64px;
+    color: blue;
+    background-color: aqua;
+}
+
+.primero h2{
+    font-size: 48px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+/* Voy a cambiar este de 2.66 ha cambiado a 5.25 */
+
+.primero h3{
+    font-size: 32px;
+    color: #008000;
+    background-color: #adff2f;
+}
+
+.primero h4{
+    font-size: 24px;
+    color: hsl(60, 100%, 50%);
+    background-color: hsl(0, 0%, 0%);
+}
+
+.primero h5{
+    font-size: 16px;
+    color: rgb(255, 243, 221);
+    background-color: rgb(19, 7, 2);
+}
+/* Voy a cambiar este de 1.74 cambia a 18.05 */
+
+
+/* Aquí pongo los encabezados que están dentro del div 2 */
+
+.segundo h1{
+    font-size: 3rem;
+    color: azure;
+    background-color: rgb(13, 48, 37);
+}
+/* De 1.19 a 13.94 */
+
+.segundo h2{
+    font-size: 2.5rem;
+    color: #8a2be2;
+    background-color: #adff2f;
+}
+
+.segundo h3{
+    font-size: 2em;
+    color: rgb(255, 127, 80);
+    background-color: rgb(47, 79, 79);
+}
+
+.segundo h4{
+    font-size: 1.5em;
+    color: hsl(347, 93%, 6%);
+    background-color: hsl(0, 0%, 66%);
+}
+/* De 2.11 pasa a 8.34 */
+
+.segundo h5{
+    font-size: 1em;
+    color: rgb(127, 178, 178);
+    background-color: rgb(45, 7, 27);
+}
+/* de 1.13 a 7.69 */
+
+
+/* He elegido los nuevos colores para respetar los contrastes */
+

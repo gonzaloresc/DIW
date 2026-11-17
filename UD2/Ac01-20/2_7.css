@@ -1,0 +1,41 @@
+/* Apartado 1 */
+
+:root{
+    --color-texto: red;
+    --color-fondo: green;
+    --color-acento: blue;
+    --espacio1: 4px;
+    --espacio2: 8px;
+    /* Apartado 5. si, se actualizan todos los datos si cambiamos las variables desde aquí entiendo que es uno de
+    los usos de las variables */
+    --radio: 2mm;
+}
+
+.tarjeta{
+    margin: var(--espacio1);
+    border: var(--espacio2);
+    border-radius: var(--radio);
+    border: 1px solid var(--borde, #64748b);
+    /* Apartado 4. Cuando ponemos la variable aquí sin declararla en el root funciona perfectamente pero tiene prioridad
+    hacerlo en el :root */
+}
+
+h1{
+    color: var(--color-acento);
+}
+a{
+    color: var(--color-acento);
+}
+p{
+    color: var(--color-texto);
+}
+
+.ofertas{
+    --color-acento: yellow;
+    color: var(--color-acento);
+}
+/*Se cambia el color de acento en solo este elemento ya que estamos cambiando la variable de dentro, el otro elemento
+usa el color de acento normal*/
+
+
+/* Las variables son utiles para reutilizar código por ejemplo usar los mismos colores o los mismos espacios */

@@ -1,0 +1,54 @@
+/* Aquí pongo los encabezados que están dentro del div 1 */
+
+.primero h1{
+    font-size: 64px;
+}
+
+.primero h2{
+    font-size: 48px;
+}
+
+.primero h3{
+    font-size: 32px;
+}
+
+.primero h4{
+    font-size: 24px;
+}
+
+.primero h5{
+    font-size: 16px;
+}
+
+/* Aquí pongo los encabezados que están dentro del div 2 */
+
+.segundo h1{
+    font-size: 3rem;
+}
+
+.segundo h2{
+    font-size: 2.5rem;
+}
+
+.segundo h3{
+    font-size: 2em;
+}
+
+.segundo h4{
+    font-size: 1.5em;
+}
+
+.segundo h5{
+    font-size: 1em;
+}
+
+/*
+
+- La diferencia es sobretodo por que px son los pixeles fijos
+- Los em cambian el tamaño según el de su elemento padre
+- Y los rem cambian según el html
+
+Según las medidas del dispositivo (que cambio con las dev tools) ambos grupos de encabezados
+cambian el tamaño igual
+
+*/

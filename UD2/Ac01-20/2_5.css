@@ -1,0 +1,58 @@
+/* Apartado 1 */
+a[href="index.html"]{
+    text-decoration: underline 4px;
+}
+/* Aquí selecciono los "a" que tienen como href exactamente "index.html" */
+
+
+/* Apartado 2 */
+a[href^="https://"]{
+    color: red;
+}
+/* Para seleccionar los externos he cogido los que empiezan por "https://" los he
+puesto rojos como prueba */
+
+
+/* Apartado 3 */
+a[href$=".pdf"]::after{
+    content: "pdf";
+}
+/* A los que acaban por pdf justo despues con "after" les añado el texto "pdf" */
+
+
+/* Apartado 4 */
+input:required{
+    border-left-width: 2px;
+}
+/* A los requeridos les pongo el borde */
+
+
+/* Apartado 5 */
+input:focus{
+    color: red;
+}
+/* A los que tienes el teclado encima se les cambia el color */
+
+
+/* Apartado 6 */
+.nota + p{
+    color: green;
+}
+/* El texto que va despues se pondrá en otro color */
+
+
+/* Apartado 7 */
+a:not([href="index.html"]){
+    color: aqua;
+}
+/* Se aplica a todos menos al de la página */
+
+
+/* Apartado 8 */
+/* Especificidad:
+1:  0-1-1: Por que tiene una clase específica y un elemento
+3:  0-1-2: Tiene una clase y dos elementos uno de esos elementos es ::after
+6:  0-1-1: Tiene una clase y un elemento
+7:  0-1-1: Tiene una pseudo-clase y un elemento
+*/
+

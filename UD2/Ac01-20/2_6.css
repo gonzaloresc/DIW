@@ -1,0 +1,87 @@
+/* Apartado 1 */
+
+.lista li:nth-child(2n){
+    color: purple;
+}
+    /*Selecciona los elementos pares de la lista*/
+
+.producto:not(.agotado){
+    color: aqua;
+}
+    /*Selecciona los elementos que no tengas la clase agotado*/
+
+[data-alergenos*="sésamo"]{
+    color: aquamarine;
+}
+    /*Selecciona los productos con advertencia de alergenos*/
+
+h2 + ul li:first-child{
+    color: blueviolet;
+}
+    /*Selecciona le primero de la lista*/
+
+h2 ~ p{
+    color: brown;
+}
+    /*Selecciona los p que continuen despues de h2*/
+
+.catalogo > p:last-child{
+    color: olive;
+}
+    /*Selecciona el último p de catalogo*/
+
+.lista :is(.oferta, .agotado){
+    color: darkcyan;
+}
+    /*Selecciona los que están en oferta o agotados*/
+
+/* Apartado 2 */
+.oferta::before{
+    content: "★";
+}
+/* Selecciono la clase de oferta y pongo el before para que vaya delante */
+
+
+/* Apartado 3 */
+
+.lista li:nth-child(2n){
+    color: red;
+}
+/*
+Tiene 2 clases y un elemento */
+
+.producto:not(.agotado){
+    color: blue;
+}
+/*
+Tiene dos clases */
+
+.lista :is(.oferta, .agotado){
+    color: green;
+}
+/*
+Tiene dos clases */
+/* Barra y centeno se ven de color rojo por que ese bloque solo coje los pares */
+
+
+/* Apartado 4 */
+.oferta:not(.agotado){
+    color: deeppink;
+}
+/* Aquí selecciono los que tienen oferta y no tienen agotado */
+
+
+/* Apartado 5 */
+/*
+    .lista {
+        & .oferta { font-weight: 700; }
+        &:hover { background-color: #faf6ef; }
+    }
+*/
+.lista .oferta{
+    font-weight: 700;
+}
+.lista:hover{
+    background-color: #faf6ef;
+}
+/* Lo he separado poniendo dos veces lista */
